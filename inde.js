@@ -75,16 +75,7 @@ var game = {
         }
         return true
     },
-    // ifFull: function () {//判断当前数组是否已满
-    //     for (var r = 0; r < this.rn; r++) {
-    //         for (var c = 0; c < this.cn; c++) {
-    //             if (this.data[r][c] == 0) {
-    //                 return false
-    //             }
-    //         }
-    //     }
-    //     return true
-    // },
+
     getRightNext: function (row, col) {//查找当前位置右侧下一个不为0的数
         for (var i = col + 1; i < this.cn; i++) {
             if (this.data[row][i] != 0) {

@@ -18,7 +18,6 @@ var game = {
         this.scores();//获取最高分数
     },
     scores: function () {
-        console.log(document.getElementsByClassName("first")[0])
         if (localStorage.getItem("score")) {
             document.getElementsByClassName("first")[0].innerHTML = localStorage.getItem("score")
         } else {
